@@ -20,6 +20,7 @@ let data: IData[] = [
       `,
     aboutTheAuthor:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis molestias sequi ex perspiciatis excepturi eligendi maiores eos culpa earum hic? Voluptatum sunt, id odio aspernatur excepturi aperiam ab minima autem.",
+    category: "Text-To-Speech",
   },
   {
     id: 2,
@@ -40,6 +41,7 @@ let data: IData[] = [
       `,
     aboutTheAuthor:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis molestias sequi ex perspiciatis excepturi eligendi maiores eos culpa earum hic? Voluptatum sunt, id odio aspernatur excepturi aperiam ab minima autem.",
+    category: "Video To Text",
   },
   {
     id: 3,
@@ -60,6 +62,7 @@ let data: IData[] = [
       `,
     aboutTheAuthor:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis molestias sequi ex perspiciatis excepturi eligendi maiores eos culpa earum hic? Voluptatum sunt, id odio aspernatur excepturi aperiam ab minima autem.",
+    category: "Text-To-Speech",
   },
   {
     id: 4,
@@ -80,6 +83,7 @@ let data: IData[] = [
       `,
     aboutTheAuthor:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis molestias sequi ex perspiciatis excepturi eligendi maiores eos culpa earum hic? Voluptatum sunt, id odio aspernatur excepturi aperiam ab minima autem.",
+    category: "Natural Language Processing",
   },
 ];
 

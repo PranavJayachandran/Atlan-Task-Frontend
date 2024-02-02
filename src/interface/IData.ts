@@ -6,4 +6,5 @@ export interface IData {
   date: string;
   code: string;
   aboutTheAuthor: string;
+  category: string;
 }
