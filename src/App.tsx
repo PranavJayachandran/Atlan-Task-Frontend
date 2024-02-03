@@ -1,11 +1,9 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
 import ProjectDetails from "./components/ProjectDetails";
+import ProjectFavourite from "./components/ProjectFavourite";
+import About from "./components/About";
 
 function App() {
   return (
@@ -13,8 +11,11 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:id" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+
+          <Route path="/projects" element={<ProjectFavourite />} />
+          <Route path="/favourites" element={<ProjectFavourite />} />
+          <Route path="/projects/:id" element={<ProjectDetails />} />
         </Routes>
       </BrowserRouter>
     </div>

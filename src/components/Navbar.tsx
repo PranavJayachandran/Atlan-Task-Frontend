@@ -9,10 +9,30 @@ const Navbar = () => {
       </div>
 
       <div className="flex gap-10">
-        <Link to="/projects" className="transition ease-in-out border-b border-transparent hover:border-white cursor-pointer ">About</Link>
-        <Link to="/projects" className="transition ease-in-out border-b border-transparent hover:border-white cursor-pointer ">Projects</Link>
-        <Link to="/projects" className="transition ease-in-out border-b border-transparent hover:border-white cursor-pointer ">Favourites</Link>
-        <Link to="/projects" className="transition ease-in-out border-b border-transparent hover:border-white cursor-pointer ">Contact</Link>
+        <Link
+          to="/about"
+          className="transition ease-in-out border-b border-transparent hover:border-white cursor-pointer "
+        >
+          About
+        </Link>
+        <Link
+          to="/projects"
+          className="transition ease-in-out border-b border-transparent hover:border-white cursor-pointer "
+        >
+          Projects
+        </Link>
+        <Link
+          to="/favourites"
+          className="transition ease-in-out border-b border-transparent hover:border-white cursor-pointer "
+        >
+          Favourites
+        </Link>
+        <Link
+          to="/projects"
+          className="transition ease-in-out border-b border-transparent hover:border-white cursor-pointer "
+        >
+          Contact
+        </Link>
       </div>
     </div>
   );

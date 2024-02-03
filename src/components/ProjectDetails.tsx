@@ -7,25 +7,8 @@ const ProjectDetails = () => {
   console.log(id);
   let data;
   if (id != undefined) data = getDataById(parseInt(id));
-  let heading =
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit.sdfdsfsdf sdfsdf";
-  let description = `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-    commodi soluta quasi quisquam unde, minima excepturi eligendi ex
-    voluptate, consequuntur provident aliquid alias neque, reprehenderit
-    tenetur iure sapiente omnis architecto!`;
-  let name = "Dam Bro";
-  let date = "May 22, 2023";
-  let code = `# Program to generate a random number between 0 and 9
-
-  # importing the random module
-  import random
-  
-  print(random.randint(0,9))
-  `;
-  let aboutTheAuthor =
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis molestias sequi ex perspiciatis excepturi eligendi maiores eos culpa earum hic? Voluptatum sunt, id odio aspernatur excepturi aperiam ab minima autem.";
   return (
-    <div className="w-10/12 noscrollbar h-[439px] overflow-scroll ">
+    <div className="text-white w-full px-20 noscrollbar h-[439px] overflow-scroll ">
       <div className="text-sm text-[#aaacc3]">Created on {data?.date}</div>
       <h1 className="text-2xl">{data?.heading}</h1>
       <div className="mt-4 bg-red-100 h-80 rounded-xl"></div>
