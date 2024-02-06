@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import ProjectDetails from "./components/ProjectDetails";
 import ProjectFavourite from "./components/ProjectFavourite";
 import About from "./components/About";
+import AddEntry from "./components/AddEntry";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/projects" element={<ProjectFavourite />} />
           <Route path="/favourites" element={<ProjectFavourite />} />
           <Route path="/projects/:id" element={<ProjectDetails />} />
+          <Route path="/addentry" element={<AddEntry />} />
         </Routes>
       </BrowserRouter>
     </div>
