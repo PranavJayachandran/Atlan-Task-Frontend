@@ -14,10 +14,10 @@ const ProjectFavourite = () => {
     VTS: false,
     NLP: false,
   });
-  useEffect(() => {
+  const fetchData = async () => {
     let temp: IData[] = [];
-    if (location.pathname == "/projects") temp = getData();
-    else temp = getFavouriteData();
+    if (location.pathname == "/projects") temp = await getData();
+    else temp = await getFavouriteData();
     setCompleteData(temp);
     setData(temp);
     setActiveCategory({
@@ -25,6 +25,9 @@ const ProjectFavourite = () => {
       VTS: false,
       NLP: false,
     });
+  };
+  useEffect(() => {
+    fetchData();
   }, [location]);
   useEffect(() => {
     handleCategoryClick();
@@ -40,7 +43,6 @@ const ProjectFavourite = () => {
     } else {
       let temp = completeData;
       temp = temp.filter((item) => {
-        console.log(item.category, category, item.category == category);
         if (item.category == category) return item;
       });
       setData(temp);
@@ -53,8 +55,8 @@ const ProjectFavourite = () => {
         setActiveCategory={setActiveCategory}
       />
       <div className="w-10/12 sm:w-9/12 sm:h-[439px] h-[680px] overflow-scroll noscrollbar flex flex-col gap-10">
-        {data?.map((item) => (
-          <ProjectCards item={item} />
+        {data?.map((item, index) => (
+          <ProjectCards item={item} key={index} />
         ))}
         {data.length == 0 ? <div>No data present to be shown</div> : <></>}
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Tryout = ({
   category,
@@ -8,7 +8,6 @@ const Tryout = ({
   link: string | undefined;
 }) => {
   const [showResult, setShowResult] = useState(false);
-  let data;
   const handleFileChange = (event: any) => {
     setShowResult(true);
   };
@@ -43,23 +42,16 @@ const Tryout = ({
         {showResult ? <iframe src={link} height={400} /> : <></>}
       </div>
     );
-  else if (category == "Text-To-Speech")
+  else if (category == "Natural Language Processing")
     return (
-      <div className="flex">
+      <div className="flex flex-col">
         <input
           className="mt-4 text-sm"
           type="file"
           onChange={handleFileChange}
           accept=".txt"
         />
-        {showResult ? (
-          <audio controls>
-            <source src={link} type="audio/wav" />
-            Your browser does not support the audio element.
-          </audio>
-        ) : (
-          <></>
-        )}
+        {showResult ? <iframe src={link} height={400} /> : <></>}
       </div>
     );
 };

@@ -18,6 +18,7 @@ function App() {
           <Route path="/favourites" element={<ProjectFavourite />} />
           <Route path="/projects/:id" element={<ProjectDetails />} />
           <Route path="/addentry" element={<AddEntry />} />
+          <Route path="*" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>
