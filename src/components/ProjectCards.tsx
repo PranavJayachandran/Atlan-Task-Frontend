@@ -2,15 +2,7 @@ import { Link } from "react-router-dom";
 import { IData } from "../interface/IData";
 
 const ProjectCards = ({ item }: { item: IData }) => {
-  // let title =
-  //   "Lorem, ipsum dolor sit amet consectetur adipisicing elit.sdfdsfsdf sdfsdf";
-  // let description = `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-  // commodi soluta quasi quisquam unde, minima excepturi eligendi ex
-  // voluptate, consequuntur provident aliquid alias neque, reprehenderit
-  // tenetur iure sapiente omnis architecto!`;
-  // let name = "Dam Bro";
-  // let date = "May 22, 2023";
-  // let id = 10;
+
   return (
     <Link to={`/projects/${item.id}`}>
       <div className="text-xs sm:text-base sm:ml-0 ml-10 w-9/12 sm:-10/12 mb-4">
