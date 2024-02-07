@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# :computer: Task - Atlan Frontend Engineer
+<strong> Link to the application: https://atlan-task-frontend-2fut.vercel.app/ </strong>
+<br>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+This particular project was created as part of Atlan hiring process for Frontend Developer. The problem statement for the same is present towards the end.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Features
 
-## Expanding the ESLint configuration
+The run time for the page is shown in the attached screenshots
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Screenshots
+### Page Load Times (Google Lighthouse used, in Incognito Browser Mode in Google Chrome)
+<strong>Load Time (Desktop) : 0.7 seconds</strong>
+![DesktopTime](https://drive.google.com/uc?export=view&id=1hV3BsNK1MPyRDUAngcObLIJR5qTyGWPc)
+<strong>Load Time (Mobile) : 1.7 seconds</strong>
+![MobileTime](https://drive.google.com/uc?export=view&id=1h4Lh_ZjmO5hp6QwWZOa4-OIKkWBhYX8d)
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Performace (Google Lighthouse used, in Incognito Browser Mode in Google Chrome)
+<strong>Desktop</strong>
+![Desktop](https://drive.google.com/uc?export=view&id=1uwnggemqCg8jWtNZ6gRkyF8gkta_C7Co)
+<strong>Mobile</strong>
+![Mobile](https://drive.google.com/uc?export=view&id=1xrNrVgsz33sRgCaH7dyIS7cu9nwE5OnX)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Problem Statement
+
+### ML Model Marketplace
+Given the recent surge in interest in AI models and LLMs, you have been tasked with building an application that showcases the various models deployed by organisations and developers alike. The application will go live as-is, so it is up you to develop an interface which is informative and enticing. The application should capture the nuances of a real-life production application, and show the various models available, their categories, and should allow end-users to select and explore any one model.
+### Brownie Points
+- [x] A space for creating these models.
+- [x] Try it out
