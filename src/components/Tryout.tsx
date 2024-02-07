@@ -8,7 +8,7 @@ const Tryout = ({
   link: string | undefined;
 }) => {
   const [showResult, setShowResult] = useState(false);
-  const handleFileChange = (event: any) => {
+  const handleFileChange = () => {
     setShowResult(true);
   };
   if (category == "Text-To-Speech")

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const ErrorComponent = ({ errorMessage }: { errorMessage: string }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -14,9 +14,8 @@ const ErrorComponent = ({ errorMessage }: { errorMessage: string }) => {
 
   return (
     <div
-      className={`${
-        isVisible ? "opacity-100" : "opacity-0"
-      } transition-opacity duration-500 ease-in-out fixed top-0 right-0 p-4 mt-4 mr-4 bg-red-500 text-white rounded`}
+      className={`${isVisible ? "opacity-100" : "opacity-0"
+        } transition-opacity duration-500 ease-in-out fixed top-0 right-0 p-4 mt-4 mr-4 bg-red-500 text-white rounded`}
     >
       {errorMessage}
     </div>

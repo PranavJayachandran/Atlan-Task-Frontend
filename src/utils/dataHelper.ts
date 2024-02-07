@@ -8,7 +8,7 @@ const fetchData = async () => {
     headers: myHeaders,
     redirect: "follow",
   };
-  let response = await fetch("http://localhost:3000/data", requestOptions);
+  let response = await fetch("https://atlanmockbackend.vercel.app/data", requestOptions);
   let result = await response.json();
   return result;
 };

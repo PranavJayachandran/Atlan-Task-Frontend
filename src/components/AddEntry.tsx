@@ -2,7 +2,7 @@ import { useState } from "react";
 import EntryField from "./EntryField";
 import ErrorComponent from "./ErrorComponent";
 import { addEntry } from "../utils/dataHelper";
-import { redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AddEntry = () => {
   const [title, setTitle] = useState("");
@@ -23,35 +23,35 @@ const AddEntry = () => {
   const addData = () => {
     if (title == "") {
       setError("Title should not be empty");
-      const timeoutId = setTimeout(() => {
+      setTimeout(() => {
         setError("");
       }, 4000);
     } else if (description == "") {
       setError("Description should not be empty");
-      const timeoutId = setTimeout(() => {
+      setTimeout(() => {
         setError("");
       }, 4000);
     }
     if (codeSample == "") {
       setError("CodeSample should not be empty");
-      const timeoutId = setTimeout(() => {
+      setTimeout(() => {
         setError("");
       }, 4000);
     }
     if (author == "") {
       setError("Author should not be empty");
-      const timeoutId = setTimeout(() => {
+      setTimeout(() => {
         setError("");
       }, 4000);
     }
     if (aboutTheAuthor == "") {
       setError("About the author should not be empty");
-      const timeoutId = setTimeout(() => {
+      setTimeout(() => {
         setError("");
       }, 4000);
     } else if (selectedOption == "") {
       setError("Select a category");
-      const timeoutId = setTimeout(() => {
+      setTimeout(() => {
         setError("");
       }, 4000);
     } else {
