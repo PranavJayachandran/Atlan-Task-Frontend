@@ -11,13 +11,6 @@ This particular project was created as part of Atlan hiring process for Frontend
 The run time for the page is shown in the attached screenshots
 
 ## Screenshots
-### Page Load Times (Google Lighthouse used, in Incognito Browser Mode in Google Chrome)
-<strong>Load Time (Desktop) : 0.7 seconds</strong>
-![DesktopTime](https://drive.google.com/uc?export=view&id=1hV3BsNK1MPyRDUAngcObLIJR5qTyGWPc)
-<strong>Load Time (Mobile) : 1.7 seconds</strong>
-![MobileTime](https://drive.google.com/uc?export=view&id=1h4Lh_ZjmO5hp6QwWZOa4-OIKkWBhYX8d)
-
-
 ### Performace (Google Lighthouse used, in Incognito Browser Mode in Google Chrome)
 <strong>Desktop</strong>
 ![Desktop](https://drive.google.com/uc?export=view&id=1uwnggemqCg8jWtNZ6gRkyF8gkta_C7Co)
