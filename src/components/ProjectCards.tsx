@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { IData } from "../interface/IData";
 
 const ProjectCards = ({ item }: { item: IData }) => {
-  // let heading =
+  // let title =
   //   "Lorem, ipsum dolor sit amet consectetur adipisicing elit.sdfdsfsdf sdfsdf";
   // let description = `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
   // commodi soluta quasi quisquam unde, minima excepturi eligendi ex
@@ -13,10 +13,10 @@ const ProjectCards = ({ item }: { item: IData }) => {
   // let id = 10;
   return (
     <Link to={`/projects/${item.id}`}>
-      <div className="w-10/12 mb-4">
-        <div className="bg-red-100 h-80 rounded-xl"></div>
+      <div className="text-xs sm:text-base sm:ml-0 ml-10 w-9/12 sm:-10/12 mb-4">
+        <div className="bg-red-100 h-20 sm:h-80 rounded-xl"></div>
         <div className="px-4 mt-4">
-          <h1 className="text-2xl font-semibold">{item.heading}</h1>
+          <h1 className="sm:text-2xl font-semibold">{item.title}</h1>
           <p className="mt-4 text-[#aaacc3]">
             {item.description.substring(0, 200)}
             {item.description.length > 200 ? "..." : ""}

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import EntryField from "./EntryField";
 import ErrorComponent from "./ErrorComponent";
+import { addEntry } from "../utils/dataHelper";
+import { redirect, useNavigate } from "react-router-dom";
 
 const AddEntry = () => {
   const [title, setTitle] = useState("");
@@ -10,6 +12,7 @@ const AddEntry = () => {
   const [aboutTheAuthor, setaboutTheAuthor] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   // Options for the dropdown
   const options = [
@@ -52,11 +55,19 @@ const AddEntry = () => {
         setError("");
       }, 4000);
     } else {
-      console.log("done");
+      addEntry(
+        title,
+        description,
+        codeSample,
+        author,
+        aboutTheAuthor,
+        selectedOption
+      );
+      navigate("/projects");
     }
   };
   return (
-    <div className="flex flex-col items-center text-white px-20">
+    <div className="flex h-[439px] w-screen noscrollbar overflow-x-hidden overflow-scroll  flex-col items-center text-white px-20">
       {error ? <ErrorComponent errorMessage={error} /> : <></>}
       <h1 className="text-2xl">Add an entry</h1>
       <div className="px-20 flex flex-col items-center mt-4 gap-10 w-screen">
@@ -113,7 +124,12 @@ const AddEntry = () => {
           </select>
         </div>
         <div>
-          <button onClick={addData}>Submit</button>
+          <button
+            className="bg-[#1d5bdc] px-4 py-2 rounded mr-4 transition ease-in-out hover:bg-white hover:text-blue-400"
+            onClick={addData}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>

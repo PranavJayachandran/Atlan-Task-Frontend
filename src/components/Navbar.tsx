@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="h-28 items-center text-white flex justify-between px-20">
+    <div className="sm:h-28 pt-2 sm:w-full sm:text-base text-sm items-center text-white flex justify-between sm:px-20 px-10">
       <div>
-        <h1 className="text-2xl">Atlan FE Task</h1>
+        <Link to="/about">
+          <h1 className="sm:text-2xl">Atlan FE Task</h1>
+        </Link>
       </div>
 
-      <div className="flex gap-10">
+      <div className="flex sm:flex-row gap-2 sm:gap-10">
         <Link
           to="/about"
           className="transition ease-in-out border-b border-transparent hover:border-white cursor-pointer "
@@ -26,12 +28,6 @@ const Navbar = () => {
           className="transition ease-in-out border-b border-transparent hover:border-white cursor-pointer "
         >
           Favourites
-        </Link>
-        <Link
-          to="/projects"
-          className="transition ease-in-out border-b border-transparent hover:border-white cursor-pointer "
-        >
-          Contact
         </Link>
       </div>
     </div>

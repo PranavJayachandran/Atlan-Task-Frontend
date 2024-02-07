@@ -26,27 +26,37 @@ const ProjectFavourite = () => {
       NLP: false,
     });
   }, [location]);
-  const handleCategoryClick = (category: string) => {
-    let temp = completeData;
-    console.log(temp, completeData, data);
-    temp = temp.filter((item) => {
-      console.log(item.category, category, item.category == category);
-      if (item.category == category) return item;
-    });
-    console.log(temp);
-    setData(temp);
+  useEffect(() => {
+    handleCategoryClick();
+  }, [activeCategory]);
+  const handleCategoryClick = () => {
+    let category = "";
+    if (activeCategory.TTS == true) category = "Text-To-Speech";
+    if (activeCategory.VTS == true) category = "Video To Text";
+    if (activeCategory.NLP == true) category = "Natural Language Processing";
+
+    if (category === "") {
+      setData(completeData);
+    } else {
+      let temp = completeData;
+      temp = temp.filter((item) => {
+        console.log(item.category, category, item.category == category);
+        if (item.category == category) return item;
+      });
+      setData(temp);
+    }
   };
   return (
-    <div className=" text-white flex w-full px-20">
+    <div className="sm:mt-0 mt-4 text-white flex w-full sm:px-20 px-4">
       <Categories
-        handleCategoryClick={handleCategoryClick}
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
       />
-      <div className="w-9/12 h-[439px] overflow-scroll noscrollbar flex flex-col gap-10">
+      <div className="w-10/12 sm:w-9/12 sm:h-[439px] h-[680px] overflow-scroll noscrollbar flex flex-col gap-10">
         {data?.map((item) => (
           <ProjectCards item={item} />
         ))}
+        {data.length == 0 ? <div>No data present to be shown</div> : <></>}
       </div>
     </div>
   );

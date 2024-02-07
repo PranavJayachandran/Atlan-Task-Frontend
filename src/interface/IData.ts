@@ -1,10 +1,11 @@
 export interface IData {
   id: number;
-  heading: string;
+  title: string;
   description: string;
   name: string;
   date: string;
   code: string;
   aboutTheAuthor: string;
   category: string;
+  link: string;
 }
