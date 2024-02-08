@@ -7,7 +7,8 @@
 This particular project was created as part of Atlan hiring process for Frontend Developer. The problem statement for the same is present towards the end.
 
 ## Project Features
-
+Allows users to view different ml models and try them out. 
+Also provides a feature to add a new model with each field being necessary (A proper error toaster would be displayed otherwise).
 The run time for the page is shown in the attached screenshots
 
 ## Screenshots
