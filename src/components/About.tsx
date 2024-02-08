@@ -3,7 +3,7 @@ import image from "../assets/download__5_-removebg-preview.png";
 
 const About = () => {
   return (
-    <div className="sm:px-0 px-4 sm:h-[439px] h-screen  overflow-hidden sm:w-screen text-white flex flex-col justify-center items-center">
+    <div className="sm:px-0 px-4 h-screen pt-20 overflow-hidden sm:w-screen text-white flex flex-col justify-center items-center">
       <div className="flex sm:flex-row flex-col gap-2 sm:gap-0">
         <div className="sm:mt-0 mt-10 w-full w-96 flex flex-col justify-center items-center">
           <h1 className="sm:text-4xl text-xl text-center">Atlan FE Task</h1>

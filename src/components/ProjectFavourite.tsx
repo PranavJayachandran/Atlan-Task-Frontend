@@ -49,7 +49,7 @@ const ProjectFavourite = () => {
     }
   };
   return (
-    <div className="sm:mt-0 mt-4 text-white flex w-full sm:px-20 px-4">
+    <div className="sm:pt-28 pt-12 h-screen text-white flex w-full sm:px-20 px-4">
       <Categories
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}

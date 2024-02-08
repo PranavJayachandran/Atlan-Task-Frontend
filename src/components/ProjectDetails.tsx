@@ -14,7 +14,7 @@ const ProjectDetails = () => {
     fetchData();
   }, [id]);
   return (
-    <div className="text-white w-full px-10 sm:px-20 noscrollbar sm:mt-0 mt-4  h-[700px] sm:h-[439px] overflow-scroll ">
+    <div className="text-white w-full px-10 sm:px-20 noscrollbar sm:mt-0 pt-24 pb-20 sm:h-full overflow-scroll ">
       <div className="text-sm text-[#aaacc3]">Created on {data?.date}</div>
       <h1 className="text-lg font-semibold sm:text-2xl">{data?.title}</h1>
       <img

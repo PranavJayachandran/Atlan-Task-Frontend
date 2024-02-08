@@ -67,10 +67,10 @@ const AddEntry = () => {
     }
   };
   return (
-    <div className="flex h-[439px] w-screen noscrollbar overflow-x-hidden overflow-scroll  flex-col items-center text-white px-20">
+    <div className="flex h-screen pt-28 pb-20 w-screen noscrollbar overflow-x-hidden overflow-scroll  flex-col items-center text-white px-20">
       {error ? <ErrorComponent errorMessage={error} /> : <></>}
       <h1 className="text-2xl">Add an entry</h1>
-      <div className="px-20 flex flex-col items-center mt-4 gap-10 w-screen">
+      <div className="px-20 flex flex-col items-center justify-center mt-4 gap-10 w-screen">
         <EntryField
           field="Title"
           value={title}
@@ -101,7 +101,7 @@ const AddEntry = () => {
           setValue={setaboutTheAuthor}
           onerow={false}
         />
-        <div className="flex w-5/12">
+        <div className="flex w-5/12 justify-center ">
           <div className="w-36">Select a category:</div>
           <select
             id="dropdown"

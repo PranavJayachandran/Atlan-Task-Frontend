@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="sm:h-28 pt-2 sm:w-full sm:text-base text-sm items-center text-white flex justify-between sm:px-20 px-10">
+    <div className="fixed sm:h-28 pt-2 w-full sm:text-base text-sm items-center bg-[#1a1d2e] text-white flex justify-between sm:px-20 px-10">
       <div>
         <Link to="/about">
           <h1 className="sm:text-2xl">Atlan FE Task</h1>

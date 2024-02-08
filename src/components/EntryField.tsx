@@ -12,7 +12,7 @@ const EntryField = ({
   onerow: boolean;
 }) => {
   return (
-    <div className="w-5/12 flex items-start gap-4">
+    <div className="w-5/12  flex justify-center sm:items-start gap-4">
       <div className="w-32">{field}</div>
       {onerow ? (
         <input
@@ -21,12 +21,20 @@ const EntryField = ({
           onChange={(e) => setValue(e.target.value)}
         />
       ) : (
-        <textarea
-          className={`px-2 py-1 w-80 bg-transparent border rounded`}
-          rows={4}
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-        />
+        <>
+          {" "}
+          <textarea
+            className={`hidden sm:block px-2 py-1 w-80 bg-transparent border rounded`}
+            rows={4}
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+          />
+          <input
+            className={`sm:hidden block px-2 py-1 bg-transparent border rounded`}
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+          />
+        </>
       )}
     </div>
   );
